@@ -1,0 +1,1 @@
+{"version":3,"file":"public_api.js","sourceRoot":"","sources":["public_api.ts"],"names":[],"mappings":";;;;AAAA,8BAAc,2CAA2C,CAAC;AAC1D,8BAAc,2CAA2C,CAAC","sourcesContent":["export * from './src/site-modules/module1/module1.module';\r\nexport * from './src/site-modules/module2/module2.module';"]}

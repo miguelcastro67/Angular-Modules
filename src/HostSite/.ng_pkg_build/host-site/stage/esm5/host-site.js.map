@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "file": "host-site.js",
+  "sources": [
+    "ng://host-site/out/src/site-modules/module2/module2.module.ts",
+    "ng://host-site/out/src/site-modules/module2/module2-routing.module.ts",
+    "ng://host-site/out/src/site-modules/module2/module2-home.component.ts",
+    "ng://host-site/out/src/site-modules/module1/module1.module.ts",
+    "ng://host-site/out/src/site-modules/module1/module1-routing.module.ts",
+    "ng://host-site/out/src/site-modules/module1/module1-home.component.ts"
+  ],
+  "sourcesContent": [
+    "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { Module2HomeComponent } from './module2-home.component';\r\nimport { Module2RoutingModule } from \"./module2-routing.module\";\r\n\r\n@NgModule({\r\n    declarations: [\r\n        Module2HomeComponent,\r\n    ],\r\n    imports: [\r\n        CommonModule,\r\n        Module2RoutingModule\r\n    ],\r\n    providers: []\r\n})\r\nexport class Module2Module { }\r\n",
+    "import { NgModule } from '@angular/core';\r\nimport { Routes, RouterModule } from '@angular/router';\r\n\r\nimport { Module2HomeComponent } from './module2-home.component';\r\n\r\nconst module2Routes : Routes = [\r\n    { path: 'home', component: Module2HomeComponent },\r\n]\r\n\r\n@NgModule({\r\n    imports: [\r\n        RouterModule.forChild(module2Routes)\r\n    ],\r\n    exports: [\r\n        RouterModule\r\n    ],\r\n    providers: []\r\n})\r\nexport class Module2RoutingModule { }\r\n",
+    "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'module2-home',\r\n  template: `<div>\r\n    <span>This is the <b>Module 2</b> home component</span>\r\n</div>\r\n    `\r\n})\r\nexport class Module2HomeComponent {\r\n  \r\n}",
+    "import { NgModule } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { Module1HomeComponent } from './module1-home.component';\r\nimport { Module1RoutingModule } from \"./module1-routing.module\";\r\n\r\n@NgModule({\r\n    declarations: [\r\n        Module1HomeComponent,\r\n    ],\r\n    imports: [\r\n        CommonModule,\r\n        Module1RoutingModule\r\n    ],\r\n    providers: []\r\n})\r\nexport class Module1Module { }",
+    "import { NgModule } from '@angular/core';\r\nimport { Routes, RouterModule } from '@angular/router';\r\n\r\nimport { Module1HomeComponent } from './module1-home.component';\r\n\r\nconst module1Routes : Routes = [\r\n    { path: 'home', component: Module1HomeComponent }\r\n]\r\n\r\n@NgModule({\r\n    imports: [\r\n        RouterModule.forChild(module1Routes)\r\n    ],\r\n    exports: [\r\n        RouterModule\r\n    ],\r\n    providers: []\r\n})\r\nexport class Module1RoutingModule { } ",
+    "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'module1-home',\r\n  template: `<div>\r\n    <span class=\"cool-color\">This is the <b>Module 1</b> home component</span>\r\n</div>\r\n`,\r\n  styles: [`.cool-color{font-weight:700;color:#4682b4;font-size:20px}`]\r\n})\r\nexport class Module1HomeComponent {\r\n  \r\n}"
+  ],
+  "names": [],
+  "mappings": ";;;;AKAA;IAAA;;;;;IAEA,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,cAAc;gBACxB,QAAQ,EAAE,mGAGX;gBACC,MAAM,EAAE,CAAC,2DAA2D,CAAC;aACtE,EAAD,EAAA;;ADTA,IAKM,aAAa,GAAY;IAC3B,EAAE,IAAI,EAAE,MAAM,EAAE,SAAS,EAAE,oBAAoB,EAAE;CACpD,CAAA;AAWD;IAAA;;;;;IATA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACN,OAAO,EAAE;oBACL,YAAY,CAAC,QAAQ,CAAC,aAAa,CAAC;iBACvC;gBACD,OAAO,EAAE;oBACL,YAAY;iBACf;gBACD,SAAS,EAAE,EAAE;aAChB,EAAD,EAAA;;ADjBA;IAAA;;;;;IAMA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACN,YAAY,EAAE;oBACV,oBAAoB;iBACvB;gBACD,OAAO,EAAE;oBACL,YAAY;oBACZ,oBAAoB;iBACvB;gBACD,SAAS,EAAE,EAAE;aAChB,EAAD,EAAA;;ADfA;IAAA;;;;;IAEA,EAAA,IAAA,EAAC,SAAS,EAAV,IAAA,EAAA,CAAW;gBACT,QAAQ,EAAE,cAAc;gBACxB,QAAQ,EAAE,kFAGP;aACJ,EAAD,EAAA;;ADRA,IAKM,aAAa,GAAY;IAC3B,EAAE,IAAI,EAAE,MAAM,EAAE,SAAS,EAAE,oBAAoB,EAAE;CACpD,CAAA;AAWD;IAAA;;;;;IATA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACN,OAAO,EAAE;oBACL,YAAY,CAAC,QAAQ,CAAC,aAAa,CAAC;iBACvC;gBACD,OAAO,EAAE;oBACL,YAAY;iBACf;gBACD,SAAS,EAAE,EAAE;aAChB,EAAD,EAAA;;ADjBA;IAAA;;;;;IAMA,EAAA,IAAA,EAAC,QAAQ,EAAT,IAAA,EAAA,CAAU;gBACN,YAAY,EAAE;oBACV,oBAAoB;iBACvB;gBACD,OAAO,EAAE;oBACL,YAAY;oBACZ,oBAAoB;iBACvB;gBACD,SAAS,EAAE,EAAE;aAChB,EAAD,EAAA;;;;;"
+}

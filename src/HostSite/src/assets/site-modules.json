@@ -1,0 +1,12 @@
+[
+    { 
+      "moduleName": "Module1Module",
+      "modulePath": "site-modules/module1/module1.module",
+      "routeParentPath": "module/1"
+    },
+    { 
+      "moduleName": "Module2Module",
+      "modulePath": "site-modules/module2/module2.module",
+      "routeParentPath": "module/2"
+    }
+]
